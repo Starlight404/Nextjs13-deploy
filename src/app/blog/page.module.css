@@ -1,0 +1,16 @@
+.container {
+}
+
+.title {
+  background-color: purple;
+  color: wheat;
+  padding: 5px 10px;
+  text-align: center;
+  border: none;
+  border-radius: 15px;
+}
+
+.content {
+  display: flex;
+  gap: 50px;
+}

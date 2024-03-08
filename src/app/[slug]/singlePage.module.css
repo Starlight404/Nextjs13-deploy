@@ -1,0 +1,100 @@
+.container {
+}
+
+.infoContainer {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.title {
+  font-size: 64px;
+  margin-bottom: 50px;
+  
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.avatar {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.infoContainer{
+  gap: 30px;
+}
+.userTextContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  color: var(--softTextColor);
+}
+
+.username {
+  font-size: 20px;
+  font-weight: 500;
+}
+.textContainer {
+  flex: 1;
+}
+.userImageContainer {
+  width: 50px;
+  height: 50px;
+  position: relative;
+}
+
+.image {
+  object-fit: cover;
+  border-radius: 15px;
+}
+.imageContainer {
+  flex: 1;
+  height: 350px;
+  position: relative;
+}
+.post {
+  flex: 5;
+  margin-top: 60px;
+}
+.content {
+  display: flex;
+  gap: 50px;
+}
+
+.desc p {
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .infoContainer {
+    flex-direction: column; /* Stack items vertically */
+    gap: 20px; /* Reduce the gap between items */
+  }
+
+  .title {
+    font-size: 40px; /* Reduce the title font size */
+  }
+
+  .user {
+    flex-direction: column; /* Stack user info vertically */
+    align-items: flex-start; /* Adjust alignment */
+    gap: 10px; /* Reduce the gap between user info */
+  }
+
+  /* ... other responsive styles ... */
+}
+
+/* Media query for screens smaller than 480px (phones) */
+@media screen and (max-width: 480px) {
+  .title {
+    font-size: 32px; /* Further reduce the title font size */
+  }
+
+  /* ... other responsive styles ... */
+}
